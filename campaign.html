@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            color: #ffffff;
+            line-height: 1.8;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0px;
+            background-color: #282c34;
+        }
+
+        .headline {
+            height: 500px;
+            background-image: url(./img/bf1-background2.jpg);
+            background-size: cover;
+        }
+
+        .headline h1 {
+            margin: 0px;
+            text-align: center;
+            background-color: #282c34;
+        }
+
+        .headline h2 {
+            margin: 350px auto auto auto;
+            text-align: center;
+        }
+
+        .cd-accordion-menu input[type=checkbox] {
+            /* hide native checkbox */
+            position: absolute;
+            opacity: 0;
+        }
+
+        .cd-accordion-menu label {
+            position: relative;
+            display: block;
+            padding: 18px 18px 18px 64px;
+            background: #f17f1a;
+            box-shadow: inset 0 -1px #555960;
+            font-size: 1.8em;
+        }
+
+        .cd-accordion-menu ul {
+            display: none;
+            padding: 0px;
+            margin: 0px 300px;
+        }
+
+        .cd-accordion-menu li {
+            list-style: none
+        }
+
+        .has-children input[type=checkbox]:checked+label+ul {
+            display: block;
+        }
+
+        .has-children2 input[type=checkbox]:checked+label+ul {
+            display: block;
+        }
+
+        .cd-accordion-menu {
+            padding-left: 0px;
+            margin-top: 0px;
+
+        }
+        #header {
+            padding: 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .nav {
+            width: 100%;
+            height: 30px;
+            background-color: #f17f1a;
+            margin: 0 auto;
+
+        }
+
+        .nav .menu {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .nav ul {
+            list-style: none;
+            width: 1000px;
+            height: 44px;
+            line-height: 44px;
+            display: flex;
+        }
+
+        .nav ul li {
+            flex: 1;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav ul li a:visited {
+            display: inline-block;
+            width: 238px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+            background: #f17f1a;
+        }
+
+        .nav ul li a:hover,
+        .nav ul li a:active {
+            background:#282c34;
+        }
+
+        .nav ul li ul {
+            display: none;
+            position: absolute;
+        }
+
+        .nav ul li:hover ul {
+            display: block;
+        }
+
+        .nav ul li ul li {
+            float: none;
+            width: 100px;
+            background:#282c34;
+        }
+
+        .menu li a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="./index.html">首页</a></li>
+                <li>
+                    条目
+                    <ul>
+                        <li><a href="./campaign.html">单人战役</a></li>
+                        <li><a href="./multiplayer.html">多人模式</a></li>
+                        <li><a href="./dlc.html">DLC</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    外部链接
+                    <ul>
+                        <li><a href="https://www.ea.com/zh-tw/games/battlefield/battlefield-1">官方主页</a></li>
+                        <li><a href="https://answers.ea.com/t5/Battlefield/ct-p/battlefield">论坛</a></li>
+                        <li><a href="https://battlefield.fandom.com/wiki/Battlefield_Wiki">Wiki</a></li>
+                    </ul>
+                </li>
+                <li><a href="./report.html">报告</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="headline">
+        <h1>《战地风云1》单人战役</h1>
+        <h2>每次扣下扳机的，都是活生生的人。</h2>
+    </div>
+    <div>
+        <ul class="cd-accordion-menu">
+            <li class="has-children">
+                <input type="checkbox" name="group-1" id="group-1" checked>
+                <label for="group-1">▼简介</label>
+                <ul>
+                    <li>
+                        <p>单人战役分为七章，第一章为序章，第二到第五章为五个不同的战争故事，最后一章为结尾辞。</p>
+                        <p>在游玩的过程中，玩家可以根据自己的策略来合理利用关卡中的有利条件帮助自己。</p>
+                        <h3>·&nbsp;敌人</h3>
+                        <p>敌人几乎在任何关卡中都会出现。玩家可以通过潜行来绕过或暗杀敌人，也可以直接以强大火力歼灭敌人。敌人死亡后掉落的武器和弹药能为玩家所用。有时候，会出现装备了精英兵种装备的敌人，这些敌人更加难以消灭。
+                        </p>
+                        <h3>·&nbsp;军械库</h3>
+                        <p>关卡中存在一些军械库，其中存放了多种武器，玩家可以选取自己想要的武器和补充弹药。军械库外形为绿色的帐篷，旁边插着红旗。
+                        </p>
+                        <h3>·&nbsp;友军</h3>
+                        <p>战场上也有玩家的友军，他们会帮助玩家对抗敌人。友军死亡后掉落的武器和弹药也能为玩家所用。
+                        </p>
+                        <h3>·&nbsp;载具</h3>
+                        <p>有的关卡允许玩家驾驶载具，载具强大的火力和坚固的装甲能够很好的保护玩家。</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-children2">
+                <input type="checkbox" name="group-2" id="group-2" checked>
+                <label for="group-2">▼章节</label>
+                <ul>
+                    <li>
+                        <h3>·&nbsp;序章：钢铁风暴</h3>
+                        <p>1918年，德军孤注一掷的突破威胁到了由美军第369步兵团，即「哈莱姆地狱战士」坚守的阵线。从多名战士的视角参与到「哈莱姆地狱战士」誓死守卫防线的战斗，体验第一次世界大战的残酷。
+                        </p>
+                        <h3>·&nbsp;第一章：浴血之战</h3>
+                        <p>英国的Mk.V坦克是一台只为击碎敌方防线而设计的装甲猛兽。1918秋季，战争步入末期，德军加固了自己的防线，英军步兵的进攻一次次无功而返。1918年10月17日，法国，里贝库尔，英军决定发动第二次康布雷战役，使用Mark.V坦克强行突破战线，Danny Edwards作为在战场上临危受命，与指挥官Townsend和其他同伴驾驶Mk.V与友军一同打开突破敌军防线的通道，设法突进至康布雷。</p>
+                        <h3>·&nbsp;第三章：萨伏依万岁！</h3>
+                        <p>成为意大利敢死队的志愿军，成为意大利阿尔卑斯山战役的突击先锋。1918年秋季，北意大利，多罗米蒂，意大利王国与奥匈帝国的军队在阿尔卑斯山脉上相持，意大利军一支被称为「敢死队」的高山精英军团决定突袭，Luca Vincenzo Cocchiola和他的双胞胎兄弟Matteo所在的阿尔卑斯山精锐高山军团决定发动突袭，Luca将所在的单位将掩护Matteo所在的单位发动进攻，以赢得南部战线的最后一战的胜利。
+                        </p>
+                        <h3>·&nbsp;第四章：传令兵</h3>
+                        <p>在当时规模最大的海军舰队掩护下，冲入加里波利的滩头。1915年春季，大英帝国决定开启新的战线，来自世界各地的日不落帝国军人组成的50万英国皇家海军舰队穿过地中海对奥斯曼帝国本土发动攻击，加利波利半岛，达达尼尔海峡，英军在克莱德河号的火力掩护下发动的加里波利战役登陆战的第二天，Frederick Bishop遇到了谎报年龄通过征兵考核，慕名而来的少年Jack Foster，并被分配做为他的下属。Frederick并不满意这个开枪都不会的新兵蛋子，于是将他留在克莱德河号上独自上陆夺取阵地。Jack却偷偷跟来想要参与战斗，并被分配担任传令兵，Frederick不愿难得一见的来自澳大利亚家乡的少年就这么接受如此危险的任务，便自告奋勇，前往前线传令。
+                        </p>
+                        <h3>·&nbsp;第五章：事在人为</h3>
+                        <p>加入阿拉伯的劳伦斯，在沙漠战役中对抗奥斯曼帝国。1918年春季，美索不达米亚，阿贾，在中东沙漠之中许多阿拉伯部落反抗军在极力反抗奥斯曼帝国对阿拉伯长达数百年的统治。Zara Ghufran，作为其中一支阿拉伯反抗军的成员追随着传奇人物--英国军官T.E Lawrence，由于军力的悬殊，阿拉伯反抗军只能使用一些出其不意的手段。奥斯曼帝国决心彻底消灭这些反抗势力，一列装甲列车的到来给予了阿拉伯反抗军极大的压力。为了消灭这列装甲列车，Zara奉Lawrence之命，潜入万军之中，盗取能够引出装甲列车并给予其毁灭性打击所需的密码本和高优先级信件。
+                        </p>
+                        <h3>·&nbsp;结尾辞：勿忘我们</h3>
+                        <p>纪念那些曾服役过的战士们。这场超过6000万人参战的「完结所有战争的战争」终将结束，而只有少数人的名字会被铭记，大多数浴血奋战的战士的名字，都会尘封在历史之中。</p>
+                    </li>
+                </ul>
+        </ul>
+    </div>
+</body>

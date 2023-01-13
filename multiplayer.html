@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            color: #ffffff;
+            line-height: 1.8;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0px;
+            background-color: #282c34;
+        }
+
+        .headline {
+            height: 500px;
+            background-image: url(./img/bf1-background4.jpg);
+            background-size: cover;
+        }
+
+        .headline h1 {
+            margin: 0px;
+            text-align: center;
+            background-color: #282c34;
+        }
+
+        .headline h2 {
+            margin: 350px auto auto auto;
+            text-align: center;
+        }
+
+        .cd-accordion-menu input[type=checkbox] {
+            /* hide native checkbox */
+            position: absolute;
+            opacity: 0;
+        }
+
+        .cd-accordion-menu label {
+            position: relative;
+            display: block;
+            padding: 18px 18px 18px 64px;
+            background: #f17f1a;
+            box-shadow: inset 0 -1px #555960;
+            font-size: 1.8em;
+        }
+
+        .cd-accordion-menu ul {
+            display: none;
+            padding: 0px;
+            margin: 0px 300px;
+        }
+
+        .cd-accordion-menu li {
+            list-style: none
+        }
+
+        .has-children input[type=checkbox]:checked+label+ul {
+            display: block;
+        }
+
+        .has-children2 input[type=checkbox]:checked+label+ul {
+            display: block;
+        }
+
+        .cd-accordion-menu {
+            padding-left: 0px;
+            margin-top: 0px;
+
+        }
+
+        .cd-accordion-menu p {
+            font-size: 1.1em;
+            margin: 1.5em auto;
+        }
+
+
+        .has-children p:first-child,
+        .has-children2 p:first-child {
+            margin-top: 1.5em;
+        }
+
+        #header {
+            padding: 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .nav {
+            width: 100%;
+            height: 30px;
+            background-color: #f17f1a;
+            margin: 0 auto;
+
+        }
+
+        .nav .menu {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .nav ul {
+            list-style: none;
+            width: 1000px;
+            height: 44px;
+            line-height: 44px;
+            display: flex;
+        }
+
+        .nav ul li {
+            flex: 1;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav ul li a:visited {
+            display: inline-block;
+            width: 238px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+            background: #f17f1a;
+        }
+
+        .nav ul li a:hover,
+        .nav ul li a:active {
+            background: #282c34;
+        }
+
+        .nav ul li ul {
+            display: none;
+            position: absolute;
+        }
+
+        .nav ul li:hover ul {
+            display: block;
+        }
+
+        .nav ul li ul li {
+            float: none;
+            width: 100px;
+            background: #282c34;
+        }
+
+        .menu li a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="./index.html">首页</a></li>
+                <li>
+                    条目
+                    <ul>
+                        <li><a href="./campaign.html">单人战役</a></li>
+                        <li><a href="./multiplayer.html">多人模式</a></li>
+                        <li><a href="./dlc.html">DLC</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    外部链接
+                    <ul>
+                        <li><a href="https://www.ea.com/zh-tw/games/battlefield/battlefield-1">官方主页</a></li>
+                        <li><a href="https://answers.ea.com/t5/Battlefield/ct-p/battlefield">论坛</a></li>
+                        <li><a href="https://battlefield.fandom.com/wiki/Battlefield_Wiki">Wiki</a></li>
+                    </ul>
+                </li>
+                <li><a href="./report.html">报告</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="headline">
+        <h1>《战地风云1》多人模式</h1>
+        <h2>加入《战地风云1》，在身临其境的游戏体验中参与波澜壮阔的世界第一次大战。</h2>
+    </div>
+    <div>
+        <ul class="cd-accordion-menu">
+            <li class="has-children">
+                <input type="checkbox" name="group-1" id="group-1" checked>
+                <label for="group-1">▼模式</label>
+                <ul>
+                    <li>
+                        <p>在《战地风云1》多人模式中，有多种模式可供玩家游玩。</p>
+                        <h3>·&nbsp;征服</h3>
+                        <p>《战地风云》系列的经典玩法。32vs32的大规模战争，所有的载具、兵种、装备都将投入战场，玩家必须通过夺取目标点的控制权，并守卫住目标点或击杀对方有生力量来获得分数，先获得1000分的军队获得胜利。
+                        </p>
+                        <h3>·&nbsp;抢攻</h3>
+                        <p>更小、更为密集的快节奏步兵战斗，与征服模式略有不同，目标点的控制权为唯一得分手段。</p>
+                        <h3>·&nbsp;行动</h3>
+                        <p>《战地风云1》的特色玩法。根据真实的战役改编的跨越多张地图的战斗，每张地图分为多个区域，进攻方需要竭尽全力的推进战线以攻下更多区域，防守方则需要守住阵地，并歼灭敌人来耗尽敌军兵力。随着局势白热化，庞大的战争机器———机械巨兽也将被投入战场。
+                        </p>
+                        <h3>·&nbsp;闪击</h3>
+                        <p>比行动模式更快，更小的20vs20模式，对战仅在一张地图上发生。进攻方兵力更少，进攻次数也更少。</p>
+                        <h3>·&nbsp;前线</h3>
+                        <p>前线模式均匀结合了行动和征服模式。在第一阶段，每一方都要争夺一连串的目标，一次只有一个有效目标，征服目标会向敌方基地靠近。当一方被推到基地时，他们需要防守基地里的两个电报站，电报站可以呼叫火炮支援击溃敌军。直到两个电报站被炸毁结束，若时间耗尽或进攻方人力耗尽则继续回到前一个目标点争夺。
+                        </p>
+                        <h3>·&nbsp;突击</h3>
+                        <p>同一张地图被划分为多个区域，每个区域拥有两个电台，进攻方需要设法对电台安置定时炸弹并防守至炸弹爆炸，两个电台都被后进入下一个区域的争夺。防守方可通过电台获得来自后方炮兵阵地的火力支援。进攻方需要爆破敌方所有电台，防守方则需要尽可能消灭敌人和守住区域。
+                        </p>
+                        <h3>·&nbsp;团队死斗</h3>
+                        <p>多人FPS游戏的经典玩法。没有载具的纯步兵战斗，依靠击杀更多的敌人来获得胜利。</p>
+                        <h3>·&nbsp;战争信鸽</h3>
+                        <p>争夺在战场上随机出现的信鸽并保护抢到信鸽的传令员，成功放飞信鸽且未被击落后获得分数并呼叫地图炮击消灭敌人。成功放飞三只信鸽的一方或计时结束后得分多的一方获得胜利。</p>
+                        <h3>·空降补给</h3>
+                        <p>双方玩家需要守在补给旁边得到分数，直到一方达到500分为止。</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-children2">
+                <input type="checkbox" name="group-2" id="group-2" checked>
+                <label for="group-2">▼载具与兵种</label>
+                <ul>
+                    <li>
+                        <p>在游戏中，玩家可以根据他们的意愿自行选择他们的兵种。部分地图中还有载具使用。</p>
+                        <p>常规兵种分为突击兵、支援兵、医疗兵、侦查兵四类，都携带主武器和副武器，可以在部署时进行选择。部署中若选择在坦克、装甲载具、马匹、飞机等载具上部署，则会成为坦克兵、骑兵、飞行员等兵种。战场上还会出现喷火兵、哨兵（机枪与冲锋枪两种）、坦克猎手、战壕奇兵、入侵者等精英兵种装备，任何兵种都可以在拾取上述装备后变更变更为上述五个精英兵种。
+                        </p>
+                        <p>载具可在部署界面选择。载具有地面载具、空中载具、水上载具三种可选。其中地面载具有Mark-V巡航坦克、A7V重型坦克、圣沙蒙攻击坦克、雷诺FT-17轻型坦克、朴帝洛夫·加福德突击装甲车、火炮装甲车；空中载具有战斗机（信天翁D-III/DR.1/索普威斯骆驼式/斯帕德XIII）、攻击机(布里斯托
+                            F2.B/哈尔伯施塔特 CL.II/A.E.F 2-A2/Rumpler C.I)、轰炸机(戈塔·G/卡普罗尼 CA.5/Airco DH.10/汉莎·勃兰登堡
+                            G.I)、重型轰炸机（伊利亚·穆罗梅茨）、C级飞艇；水上载具有M.A.S鱼雷快艇、Y-Lighter登陆艇、L级驱逐舰。</p>
+                        <p>此外，还有一种特殊的载具：机械巨兽。机械巨兽是战场上的超级武器，拥有强大的火力和坚固的装甲，甚至能够扭转局势。有L30齐柏林飞艇、装甲列车、铁公爵级无畏舰、Char
+                            2C坦克四种机械巨兽。</p>
+                    </li>
+                </ul>
+        </ul>
+    </div>
+</body>
+
+</html>

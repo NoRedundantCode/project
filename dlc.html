@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            color: #ffffff;
+            line-height: 1.8;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0px;
+            background-color: #282c34;
+        }
+
+        .headline {
+            height: 500px;
+            background-image: url(./img/bf1-background3.jpg);
+            background-size: cover;
+        }
+
+        .headline h1 {
+            margin: 0px;
+            text-align: center;
+            background-color: #282c34;
+        }
+
+        .headline h2 {
+            margin: 350px auto auto auto;
+            text-align: center;
+        }
+
+        #color-lump {
+            background-color: #f17f1a;
+            margin: 0px auto;
+            width: 100%;
+            height: 30px;
+            background-color: #f17f1a;
+        }
+
+        .text {
+            margin: auto;
+        }
+
+        .text>p {
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .table1 {
+            margin: 0px 20%;
+        }
+
+        #header {
+            padding: 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .nav {
+            width: 100%;
+            height: 30px;
+            background-color: #f17f1a;
+            margin: 0 auto;
+
+        }
+
+        .nav .menu {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .nav ul {
+            list-style: none;
+            width: 1000px;
+            height: 44px;
+            line-height: 44px;
+            display: flex;
+        }
+
+        .nav ul li {
+            flex: 1;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav ul li a:visited {
+            display: inline-block;
+            width: 238px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+            background: #f17f1a;
+        }
+
+        .nav ul li a:hover,
+        .nav ul li a:active {
+            background:#282c34;
+        }
+
+        .nav ul li ul {
+            display: none;
+            position: absolute;
+        }
+
+        .nav ul li:hover ul {
+            display: block;
+        }
+
+        .nav ul li ul li {
+            float: none;
+            width: 100px;
+            background:#282c34;
+        }
+
+        .menu li a {
+            text-decoration: none;
+        }
+        .sidenav {
+            width: 170px;
+            position: fixed;
+            z-index: 1;
+            top: 560px;
+            background:#1e1e1e;
+            overflow-x: hidden;
+            padding: 8px 0;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            color: #2196F3;
+            display: block;
+            font-size: 0.8em;
+        }
+
+        .sidenav a:hover {
+            color: #064579;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="./index.html">首页</a></li>
+                <li>
+                    条目
+                    <ul>
+                        <li><a href="./campaign.html">单人战役</a></li>
+                        <li><a href="./multiplayer.html">多人模式</a></li>
+                        <li><a href="./dlc.html">DLC</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    外部链接
+                    <ul>
+                        <li><a href="https://www.ea.com/zh-tw/games/battlefield/battlefield-1">官方主页</a></li>
+                        <li><a href="https://answers.ea.com/t5/Battlefield/ct-p/battlefield">论坛</a></li>
+                        <li><a href="https://battlefield.fandom.com/wiki/Battlefield_Wiki">Wiki</a></li>
+                    </ul>
+                </li>
+                <li><a href="./report.html">报告</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="headline">
+        <h1>《战地风云1》DLC</h1>
+        <h2>透过宏大的DLC，《战地风云1》将为《战地风云》系列带来未曾诉说过的一战故事。</h2>
+    </div>
+    <div id="color-lump"></div>
+    <div class="text">
+        <p>《战地风云1》共有四部DLC。四部DLC中共有22张地图，6种载具，以及其他多人游戏模式和武器。</p>
+    </div>
+    <div class="table1">
+        <table>
+            <tr>
+                <td><img src="./img/They Shall Not Pass.jpg" width="100%" /></td>
+                <td><img src="./img/In the Name of the Tsar.jpg" width="100%" /></td>
+            </tr>
+            <tr>
+                <td><img src="./img/Turning Tides.jpg" width="100%" />
+                </td>
+                <td><img src="./img/Apocalypse.jpg" width="100%" /></td>
+            </tr>
+        </table>
+    </div>
+    <div class="sidenav">
+        <a href="https://music.163.com/album?id=36225123&userid=569019409">《誓死坚守》DLC原声</a>
+        <a href="https://music.163.com/album?id=36529083&userid=569019409">《以沙皇之名》DLC原声</a>
+        <a href="https://music.163.com/album?id=37026040&userid=569019409">《力挽狂澜》DLC原声</a>
+        <a href="https://music.163.com/album?id=37886151&userid=569019409">《启示录》DLC原声</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            color: #ffffff;
+            line-height: 1.8;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0px;
+            background-color: #282c34;
+        }
+
+        #headline {
+            height: 500px;
+            background-image: url(./img/bf1-background1.jpg);
+            background-size: cover;
+        }
+
+        #headline h1 {
+            text-align: center;
+            margin: 0px;
+            background-color: #282c34;
+        }
+
+        #headline h2,
+        h3 {
+            text-align: center;
+        }
+
+        #headline h2 {
+            margin: 350px auto auto auto;
+        }
+
+        .cd-accordion-menu input[type=checkbox] {
+            /* hide native checkbox */
+            position: absolute;
+            opacity: 0;
+        }
+
+        .cd-accordion-menu label {
+            position: relative;
+            display: block;
+            padding: 18px 18px 18px 64px;
+            background: #f17f1a;
+            box-shadow: inset 0 -1px #555960;
+            font-size: 1.8em;
+        }
+
+        .cd-accordion-menu ul {
+            display: none;
+            padding: 0px;
+            margin: 0px 300px;
+        }
+
+        .cd-accordion-menu li {
+            list-style: none
+        }
+
+        .has-children input[type=checkbox]:checked+label+ul {
+            display: block;
+        }
+
+        .has-children2 input[type=checkbox]:checked+label+ul {
+            display: block;
+        }
+
+        .has-children3 input[type=checkbox]:checked+label+ul {
+            display: block;
+        }
+
+        .cd-accordion-menu {
+            padding-left: 0px;
+            margin-top: 0px;
+
+        }
+
+        .cd-accordion-menu p {
+            font-size: 1.1em;
+            margin: 1.5em auto;
+        }
+
+        #header {
+            padding: 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .nav {
+            width: 100%;
+            height: 30px;
+            background-color: #f17f1a;
+            margin: 0 auto;
+
+        }
+
+        .nav .menu {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .nav ul {
+            list-style: none;
+            width: 1000px;
+            height: 44px;
+            line-height: 44px;
+            display: flex;
+        }
+
+        .nav ul li {
+            flex: 1;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav ul li a:visited {
+            display: inline-block;
+            width: 238px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+            background: #f17f1a;
+        }
+
+        .nav ul li a:hover,
+        .nav ul li a:active {
+            background: #282c34;
+        }
+
+        .nav ul li ul {
+            display: none;
+            position: absolute;
+        }
+
+        .nav ul li:hover ul {
+            display: block;
+        }
+
+        .nav ul li ul li {
+            float: none;
+            width: 100px;
+            background: #282c34;
+        }
+
+        .menu li a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="./index.html">首页</a></li>
+                <li>
+                    条目
+                    <ul>
+                        <li><a href="./campaign.html">单人战役</a></li>
+                        <li><a href="./multiplayer.html">多人模式</a></li>
+                        <li><a href="./dlc.html">DLC</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    外部链接
+                    <ul>
+                        <li><a href="https://www.ea.com/zh-tw/games/battlefield/battlefield-1">官方主页</a></li>
+                        <li><a href="https://answers.ea.com/t5/Battlefield/ct-p/battlefield">论坛</a></li>
+                        <li><a href="https://battlefield.fandom.com/wiki/Battlefield_Wiki">Wiki</a></li>
+                    </ul>
+                </li>
+                <li><a href="./index.html">报告</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="headline">
+        <h1>《战地风云 1》系列游戏简介</h1>
+        <h2>这是一场结束所有战争的战争，这场战争什么也没有结束。</h2>
+        <h3>This is a war to end all wars, it ended nothing.</h2>
+    </div>
+    <div>
+        <ul class="cd-accordion-menu">
+            <li class="has-children">
+                <input type="checkbox" name="group-1" id="group-1" checked>
+                <label for="group-1">▼简介</label>
+                <ul>
+                    <li>
+                        <div>
+                            <p>战地1/战地风云 1》（英语：Battlefield
+                                1）是由EA旗下工作室DICE开发，并由EA发行的一款以第一次世界大战为背景的第一人称射击游戏，于2016年10月21日登陆Origin（Windows
+                                PC）、XBOX ONE和PlayStation 4。于2020年6月11日前后登陆Steam平台，并包含了DLC。
+                            </p>
+                            <p>
+                                EA在2016年5月6日战地新作发布会正式公开了《战地风云1》，标题的“1”宣告本作将回归现代战争的起源和战地风云系列的原点，同时代表了第一次世界大战之意，本作与系列初代《战地风云1942》没有关系。
+                            </p>
+                            <p>
+                                本作将提供有步兵、骑兵、装甲部队、坦克、战舰、飞艇、双翼飞机等元素以及大规模杀伤性武器的海陆空全方位战斗体验。
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-children2">
+                <input type="checkbox" name="group-2" id="group-2" checked>
+                <label for="group-2">▼玩法</label>
+                <ul>
+                    <li>
+                        <div>
+                            <p>
+                                游戏分为单人游玩的战役和多人模式。
+                                单人战役模式会从几位不同士兵的视角展开,多人模式则包含联机对战，提供从欧洲法国、意大利等战争前线到阿拉伯沙漠等诸多战场。玩家可以使用手中的枪械，手榴弹，迫击炮，枪榴弹和冷兵器与敌人交战，也可以乘坐坦克，装甲车，飞机，战舰甚至战马参加战斗。
+                            </p>
+                            <p>
+                                游戏的场景破坏效果非常强大，游戏中的元素几乎都可以进行摧毁，无论是小木屋还是石头碉堡的建筑物还是脚下的土地都可能分崩离析。
+                            </p>
+                            <p>单人战役详见&nbsp;<a href="">条目:单人战役</a></p>
+                            <p>多人模式相见&nbsp;<a href="">条目:多人模式</a></p>
+                        </div>
+                    </li>
+                </ul>
+
+            </li>
+            <li class="has-children3">
+                <input type="checkbox" name="group-3" id="group-3" checked>
+                <label for="group-3">▼DLC</label>
+                <ul>
+                    <li>
+                        <p>
+                            在《战地风云1》发售之后，EA和DICE又推出了四款DLC。四款DLC中包含了全新的地图、武器和载具。DLC可以单独购买，也可以通过购买革命版游戏直接获得全部DLC。
+
+                        </p>
+                        <p>DLC内容详见&nbsp;<a href="">条目:DLC</a></p>
+                    </li>
+                </ul>
+        </ul>
+    </div>
+</body>
+
+</html>
